@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gupter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel:wght@400..900&family=Gupter:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    font-family: "Alice", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f3fbc; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    max-height: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #E2F1E7; 
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #EAD8B1; 
+    color: #243642; 
+}
+
+
+.services-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001f3fbc;
+    padding: 10px;
+    top: 150%; 
+    left: 0;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: #E2F1E7;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAD8B1;
+    color: #243642;
+}
+
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-image: url(pbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px; 
+}
+.title {
+    font-family: "Cinzel", serif;
+    grid-column: span 3;
+    font-size: 2.5em;
+    color: #FCFAEE;
+    margin-bottom: 40px;
+}
+.product-card {
+    background-color: #F2E5BF;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-name {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #654520;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #825B32;
+    margin-bottom: 20px;
+}
+.buy-btn {
+    font-family: "Gupter", serif;
+    background-color: #254336;
+    color: #DAD3BE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buy-btn:hover {
+    background-color: #43766C;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price {
+    font-family: "Gupter", serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+footer {
+    background-color: #001F3F;
+    color: #EAD8B1;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #3A6D8C;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #697565;
+}
+.footer-nav {
+    margin: 20px 0;
+}
+.footer-btn {
+    font-family: "Alice", serif;
+    background-color: #3A6D8C;
+    color: #EAD8B1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.footer-btn:hover {
+    background-color: #6A9AB0;
+    color: #EAD8B1;
+    transform: translateY(-5px); 
+}
+footer p {
+    font-family: "Alice", serif;
+    margin-top: 20px;
+    font-size: 1.1em;
+}

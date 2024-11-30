@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    font-family: "Alice", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f3fbc; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    max-height: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #E2F1E7;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #EAD8B1; 
+    color: #243642; 
+}
+.services-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001f3fbc;
+    padding: 10px;
+    top: 150%; 
+    left: 0;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: #E2F1E7;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAD8B1;
+    color: #243642;
+}
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("pbg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.service-container {
+    max-width: 1300px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 110px;
+    
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service-section-left .service-image {
+    order: 1; 
+}
+
+.service-section-left .service-content {
+    order: 2; 
+    padding-left: 20px;
+    flex: 1;
+}
+
+.service-section-right .service-content {
+    order: 1; 
+    padding-right: 20px;
+    flex: 1;
+}
+
+.service-section-right .service-imager {
+    order: 2; 
+}
+
+.service-image img, .service-imager img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 700px;
+    height:600px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.service-content h1 {
+    font-family: "Cinzel", serif;
+    font-size: 3.5rem;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: 100px;
+    color: #e64833;
+}
+
+.service-content p {
+    font-family: "Alice", serif;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #874f41;
+    font-style: inherit;
+}
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+    }
+    .service-content {
+        padding: 20px;
+    }
+    .service-image img, .service-imager img {
+        border-radius: 15px 15px 0 0;
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #001F3F;
+    color: #EAD8B1;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #3A6D8C;
+    font-size: 30px; 
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #697565; 
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-btn {
+    font-family: "Alice", serif;
+    background-color: #3A6D8C;
+    color: #EAD8B1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #6A9AB0;
+    color: #EAD8B1;
+    transform: translateY(-5px); 
+}
+footer p {
+    font-family: "Alice", serif;
+    margin-top: 20px;
+    font-size: 1.1em;
+}

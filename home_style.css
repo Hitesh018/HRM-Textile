@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: url('C:\Users\ADMIN\Desktop\LPU\html website\first page.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    font-family: "Alice", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f3fbc; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    max-height: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #E2F1E7; 
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #EAD8B1; 
+    color: #243642; 
+}
+
+
+.services-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001f3fbc;
+    padding: 10px;
+    top: 150%; 
+    left: 0;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: #E2F1E7;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAD8B1;
+    color: #243642;
+}
+
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.welcome-header {
+    font-family: "Cinzel", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    background-image: url("first\ page.jpg"); 
+    background-size: cover;
+    color: #EEEDED;
+    position: relative;
+    top: 0; 
+    padding: 20px;
+}
+.welcome{
+    color: #EDDFE0;
+    font-family: "Cinzel", serif;
+    font-size: 200px;
+}
+.to{
+    font-size:100px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-header h1 {
+    font-size: 100px;
+    line-height: 1.2;
+    opacity: 0; 
+    animation: fadeInUp 2s ease-in-out forwards; 
+}
+
+.what-we-do {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    background-image: url('1.jpg'); 
+    background-size: cover;
+    backdrop-filter: blur(5px); 
+}
+
+.text-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.what-we-do h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    line-height: 1.6;
+}
+
+.content {
+    padding: 40px;
+    color: #333;
+    margin-top: 100vh; 
+}
+footer {
+    background-color: #001F3F;
+    color: #EAD8B1;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    font-family: 'Noto Serif Display', serif;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #3A6D8C;
+    font-size: 30px; 
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #697565; 
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-btn {
+    background-color: #3A6D8C;
+    color: #EAD8B1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #6A9AB0;
+    color: #EAD8B1;
+    transform: translateY(-5px); 
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
